@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MRLL</title>
+		<link rel="icon" href="img/logo.png">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	</head>
+	
+	<body>
+	<!-----Nav----->
+        <header>
+			<nav>
+				<div id="logo">
+					<p><b>MARIELLE</b></p>
+				</div>
+        
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#works" >Works</a></li> 
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+        
+				<div id="menubar">
+					<img src="img/menubar.png">
+				</div>
+        
+			</nav>
+        </header>
+	
+	<!---BG------->
+	<div class="main_bg" id="home">
+		<div class="bg">
+			<!---RESUME--->
+			<div class="container_main" id="about">
+				<!---HEADER--->
+				<div class="container_title">
+				<h1 class="header_name1" style="font-weight:100; text-align:center;">HI! I'M MARIELLE</h1>
+				<hr class="header">
+				</div>
+				<!---PROFILE--->
+				<div class="container_profile">
+				<p class="profile"> &nbsp;I'm Marielle an I.T fresh graduate that wants to pursue a career in Web Designing. And I would love to broaden my knowledge and discover more in web designing by building websites from start to finish. </p>
+				</div>
+				<!---Skills---->
+				<div class="container_skills">
+					<h2 class="header_name2 border_2">SKILLS</h2>
+					<dl>
+						<dt><b>Programming Language</b></dt>
+						<dd>VB.Net</dd>
+						<dt><b>Database</b></dt>
+						<dd>MySQL</dd>
+						<dd>MS SQL Server 2008</dd>
+						<dt><b>Web Technologies</b></dt>
+						<dd>HTML</dd>
+						<dd>CSS</dd>
+						<dt><b>Photoshop</b></dt>
+					</dl>
+					</div>
+				<!---Contact------>
+				<div class="container_contact">
+				<h2 class="header_name2 border_2" id="contact">CONTACT</h2>
+				<dl>
+				<dt><b><img src="img/marker.png" style="width:2%; height:3%;">&nbsp;Address:</b></dt>
+				<dd>Brgy. Jesus Dela Peña. Marikina City. NCR 1804</dd>
+				<dt><b><img src="img/envelope.png" style="width:2%; height:3%;">&nbsp;Email:</b></dt>
+				<dd>marielletiburcio.mt@gmail.com</dd>
+				<dt><b><img src="img/phone.png" style="width:2%; height:3%;">&nbsp;Contact Number:</b></dt>
+				<dd>0955-683-5330</dd>
+				</dl>
+				</div>
+			<!-----PROJECTS AND DESIGNS--------->
+			    <div class="container_design">
+					<h2 class="header_name2 border_2" id="works">PROJECTS AND DESIGN</h2> 
+				<div class="project_wrapper">
+					<div class="container_project">
+						<div class="container_project_wrapper">
+							<img src="img/mrvn_icon.png">
+						</div>
+						<div class="container_project_link">
+							<a href="#">MRVN</a>
+						</div>
+					</div>
+					<div class="container_project">
+						<div class="container_project_wrapper">
+							<img src="img/loremipsum_icon.png">
+						</div>
+						<div class="container_project_link">
+							<a href="https://mrlltbrc.github.io/Lorem-Ipsum/">LOREMIPSUM</a>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!---DOWNLOAD RESUME
+			
+			<a href="#" class="container_link">DOWNLOAD RESUME</a>--->
+			
+			<!---FOOTER--->
+			<footer>
+			<h3 class="footer">M R L L &copy; 2019</h3>
+			</footer>
+	</div>
+        
+        <script>
+            let menubar = document.querySelector('nav #menubar img');
+            let status = true
+            menubar.addEventListener('click' , function(){
+                if(status === true){
+                    document.querySelector('nav ul').setAttribute('style' , 'left : 0 ;  transition : 1s')
+                    status = false
+                }
+                else if(status === false){
+                    document.querySelector('nav ul').setAttribute('style' , 'left : -100% ;  transition : 1s')
+                    status = true
+                }
+            })
+        </script>
+</body>
+</html>
